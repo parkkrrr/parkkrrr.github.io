@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 * {
     margin: 0;
     padding: 0px;
+    font-family: 'Fredoka One', cursive;
 }
 
 #sec1 {
@@ -8,7 +11,7 @@
         linear-gradient(45deg,
             rgba(0, 0, 0, 0.363),
             rgba(10, 67, 35, 0.97)), url('./images/borealis.jpg');
-    width: auto;
+    max-width: auto;
     color: white;
     height: 1000px;
     background-repeat: no-repeat;
@@ -73,11 +76,13 @@
     position: absolute;
     margin: 80px 100px 0px 60px;
     padding-top: 10px;
-}
+    font-size: xx-large;
+    }
 
-.footer{
+.footer {
     max-width: fit-content;
     max-height: fit-content;
     margin: auto;
     padding: 10px;
+    text-align: center;
 }
