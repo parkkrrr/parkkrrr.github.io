@@ -62,11 +62,12 @@
 
 #logo img {
     padding: 0px 0px 0px 55px;
-    transition: 0.5s;
     position: relative;
+    overflow: hidden;
 }
 
 #logo img:hover {
+    transition: 0.5s;
     transform: scale(1.1);
 }
 
@@ -78,6 +79,12 @@
     padding-top: 10px;
     font-size: xx-large;
     }
+
+#poster img{
+    height: auto;
+    width: 500px;
+    position: absolute;
+}
 
 .footer {
     max-width: fit-content;
