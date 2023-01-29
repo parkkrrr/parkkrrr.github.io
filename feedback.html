@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
-    <link rel="stylesheet" href="/feedback.css">
+    <link rel="stylesheet" href="feedback.css">
     <link rel="shortcut icon" href="./images/feedback.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="home">
-        <a href="/index.html"><img src="/images/home.png" alt=""></a>
+        <a href="/index.html"><img src="./images/home.png" alt=""></a>
     </div>
     <div class="logo">
-        <img src="/images/logo.png">
+        <img src="./images/logo.png">
     </div>
 
     <div class="feedback">
-        <form action="action.php">
-            <input type="text" name="text" placeholder="Enter you Name:" required pattern="[a-z][A-Z]"><br><br>
+        <form action="formData.php" method="post">
+            <input type="text" name="name" placeholder="Enter you Name:" required pattern="{2,30}"><br><br>
 
             <textarea name="feedback" cols="30" rows="10" placeholder="Write your Feedback"></textarea><br>
 
@@ -39,8 +39,10 @@
                         title="Linkedin"></a></li>
         </ul>
         <br>
-        <center><h5>&copy;2023 Parkkrrr</h5></center>
+        <center>
+            <h5>&copy;2023 Parkkrrr</h5>
+        </center>
     </div>
-    </body>
+</body>
 
 </html>
