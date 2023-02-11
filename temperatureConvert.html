@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="./tempConv.css">
     <script>
         function celToFah() {
             let celsius = document.getElementById("temp").value;
@@ -14,62 +15,6 @@
             document.getElementById("output").innerHTML = fahrenheitToCelsius.toPrecision(3) + "&#8451";
         }
     </script>
-    <style>
-        body {
-            background-image: linear-gradient(rgb(167, 93, 251), rgb(101, 160, 255));
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        .container {
-            max-width: 35vh;
-            max-height: fit-content;
-            position: relative;
-            margin: auto;
-            padding: 100px;
-        }
-
-        .h1 {
-            position: relative;
-            margin:auto;
-            width: 850px;
-            font-size: 40px;
-            color: white;
-        }
-
-        input[type=number] {
-            font-size: 25px;
-            background-color: rgb(200, 200, 200);
-            max-width: 240px;
-        }
-
-        input[type=number]:focus {
-            background-color: white;
-        }
-
-        input[type=number]:hover {
-            background-color: white;
-        }
-
-        input[type=button] {
-            font-size: 20px;
-            border-radius: 100px;
-            background: rgb(234, 96, 46);
-            font-weight: bolder;
-        }
-
-        input[type=button]:hover {
-            cursor: pointer;
-            opacity: 0.7;
-        }
-
-        #output {
-            position: absolute;
-            margin: 10px 0px 0px 70px;
-            font-size: 40px;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
@@ -85,7 +30,13 @@
         <span id="output"></span>
     </div>
 
-
+    <footer>
+        <div class="footer">
+            <a href="./index.html"><img class="icon" src="./images/home.png" alt=""></a>
+            <br>
+            <h6>&copy; 2023 Parkkrrr</h6>
+        </div>
+    </footer>
 </body>
 
 </html>
