@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function celToFah() {
+            let celsius = document.getElementById("temp").value;
+            let celsiusToFahrenheit = (celsius * 9 / 5) + 32;
+            document.getElementById("output").innerHTML = celsiusToFahrenheit.toPrecision(3) + "&#8457";
+        }
+        function fahToCel() {
+            let fahrenheit = document.getElementById("temp").value;
+            let fahrenheitToCelsius = (fahrenheit - 32) * 5 / 9;
+            document.getElementById("output").innerHTML = fahrenheitToCelsius.toPrecision(3) + "&#8451";
+        }
+    </script>
+    <style>
+        body {
+            background-image: linear-gradient(rgb(167, 93, 251), rgb(101, 160, 255));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 35vh;
+            max-height: fit-content;
+            position: relative;
+            margin: auto;
+            padding: 100px;
+        }
+
+        .h1 {
+            position: relative;
+            margin:auto;
+            width: 850px;
+            font-size: 40px;
+            color: white;
+        }
+
+        input[type=number] {
+            font-size: 25px;
+            background-color: rgb(200, 200, 200);
+            max-width: 240px;
+        }
+
+        input[type=number]:focus {
+            background-color: white;
+        }
+
+        input[type=number]:hover {
+            background-color: white;
+        }
+
+        input[type=button] {
+            font-size: 20px;
+            border-radius: 100px;
+            background: rgb(234, 96, 46);
+            font-weight: bolder;
+        }
+
+        input[type=button]:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        #output {
+            position: absolute;
+            margin: 10px 0px 0px 70px;
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h1">
+        <h1>Temperature Converter</h1>
+    </div>
+    <div class="container">
+
+        <input type="number" id="temp" placeholder="eg. 0">
+        <br><br>
+        <input type="button" onclick="celToFah()" value="toFahrenheit">
+        <input type="button" onclick="fahToCel()" value="toCelsius"><br><br>
+        <span id="output"></span>
+    </div>
+
+
+</body>
+
+</html>
