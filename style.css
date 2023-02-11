@@ -86,6 +86,15 @@
     position: absolute;
 }
 
+#temperature img{
+    max-height: 300px;
+    margin: 400px 0px 0px 40px;
+    position: absolute;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 2px solid none;
+}
+
 .footer {
     max-width: fit-content;
     max-height: fit-content;
