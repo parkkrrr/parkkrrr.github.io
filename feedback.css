@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Fredoka One', cursive;
 }
 
-.home{
+.home {
     margin: 10px 40px 0px 1400px;
     max-width: fit-content;
     position: static;
 }
 
-.home img:hover{
+.home img:hover {
     transform: scale(1.5);
 }
 
@@ -54,7 +57,7 @@ input[type=text] {
 .icon {
     margin: auto;
     max-width: 220px;
-    max-height:20px;
+    max-height: 20px;
     position: relative;
     padding: 10px;
     margin-top: 20px;
@@ -64,13 +67,63 @@ input[type=text] {
 .icon ul li {
     list-style-type: none;
     margin-top: 20px;
-    display: inline;    
+    display: inline;
 }
 
-.icon ul li a{
+.icon ul li a {
     padding: 10px;
 }
 
-.icon ul li a img:hover{
+.icon ul li a img:hover {
     transform: scale(1.5);
 }
+/*  */
+form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input, form textarea {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #333;
+    transition: border-bottom 0.3s ease;
+  }
+  
+  form input:focus, form textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #8dc63f;
+  }
+  
+  form button[type="submit"] {
+    background-color: #8dc63f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #6f9d29;
+  }
+  
+  /* Feedback List Styles */
+  
+  .feedback-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .feedback-item h4 {
+    margin-top: 0;
+  }
+  
+  .feedback-item p {
+    margin-bottom: 0;
+  }
