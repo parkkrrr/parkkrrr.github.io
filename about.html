@@ -6,7 +6,76 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
-  <link rel="stylesheet" href="about.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+    * {
+      font-family: 'Fredoka One', cursive;
+    }
+
+    .home {
+      margin: 10px 40px 0px 1400px;
+      max-width: fit-content;
+      position: static;
+    }
+
+    #about {
+      background-color: #f2f2f2;
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 5em;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.7em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 18px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .animation {
+      text-align: center;
+      text-shadow: 0 10 10px rgba(239, 50, 50, 0.8);
+      animation: glowing 2s ease-in-out infinite;
+    }
+
+    @keyframes glowing {
+      0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      }
+
+      50% {
+        font-size: 1.75em;
+        text-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+      }
+
+      100% {
+        font-size: 1.7em;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -16,11 +85,11 @@
   <section id="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>👋 Hi, I’m @parkkrrr</p>
-      <p>👀 I’m interested in C Programming.</p>
-      <p>🌱 I’m currently learning Data Structures in C .</p>
-      <p>💞️ I’m looking to collaborate on ...</p>
-      <p>📫 How to reach me ... prakharverma2019@gmail.com</p>
+      <p class="animation">👋 Hi, I’m @parkkrrr <br>
+        💞️ I’m looking to collaborate on ... <br>
+        👀 I’m interested in C Programming. <br>
+        🌱 I’m currently learning Data Structures in C . <br>
+        📫 How to reach me ... prakharverma2019@gmail.com</p>
     </div>
   </section>
 
