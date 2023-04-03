@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IP Subnet Calculator</title>
+    <link rel="stylesheet" href="subnet.css">
+    <script src="subnet.js"></script>
+
+</head>
+
+<body>
+    <div class="home">
+        <a href="index.html"><img src="./images/home.png" alt=""></a>
+    </div>
+    <h1>IP Subnet Calculator</h1>
+    <form>
+        <label for="ipAddress">IP Address:</label>
+        <input type="text" id="ipAddress" name="ipAddress"><br>
+
+        <label for="subnetMask">Subnet Mask:</label>
+        <input type="text" id="subnetMask" name="subnetMask" value="255.255.255.0"><br>
+
+        <label for="networkAddress">Network Address:</label>
+        <input type="text" id="networkAddress" name="networkAddress" readonly><br>
+
+        <label for="broadcastAddress">Broadcast Address:</label>
+        <input type="text" id="broadcastAddress" name="broadcastAddress" readonly><br>
+
+        <label for="totalHosts">Total Hosts:</label>
+        <input type="text" id="totalHosts" name="totalHosts" readonly><br>
+
+        <label for="binaryIpAddress">Binary IP Address:</label>
+        <input type="text" id="binaryIpAddress" name="binaryIpAddress" readonly><br>
+
+        <input type="button" value="Calculate" onclick="calculate()">
+    </form>
+
+</body>
+
+</html>
