@@ -1,112 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Software Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-white text-gray-900 font-sans p-6 max-w-2xl mx-auto">
 
-<body>
-    <!------------------------------Navigation----------------------------------->
+  <header class="mb-10">
+    <h1 class="text-4xl font-bold">Your Name</h1>
+    <p class="mt-2 text-lg">
+      I'm a software engineer based in [Your City]. I'm currently a [Your Current Role] at [Your Company]. I love to build.
+    </p>
+    <div class="mt-4 flex space-x-4">
+      <a href="https://github.com/yourusername" class="text-black hover:underline" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" class="text-black hover:underline" target="_blank">LinkedIn</a>
+    </div>
+  </header>
 
-    <div class="container">
-        <div class="nav">
-            <ul>
-                <a href="#" id="logo"><img src="./images/logo.png" alt="logo" style="width: 60px;
-            height: auto;"></a>
-                <li><a href="https://www.instagram.com/parkkrrr"><img class="icons" src="./images/insta.png"
-                            title="Instagram"></a></li>
-                <li><a href="https://www.github.com/parkkrrr"><img class="icons" src="./images/github-dark.png"
-                            title="Github"></a></li>
-                <li><a href="https://www.linkedin.com/in/prakharverma2019/"><img class="icons"
-                            src="./images/linkedin.png" title="Linkedin"></a></li>
-                <li><a href="feedback.html"><img class="icons" src="./images/feedback.png" title="Feedback"></a></li>
-                <li><a href="contact.html"><img class="icons" src="./images/contact.png" title="Contact"></a></li>
-                <li><a href="about.html"><img class="icons" src="./images/about.png" title="Contact"></a></li>
-            </ul>
-        </div>
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4">Experience</h2>
+
+    <div class="mb-6">
+      <h3 class="font-bold">Technical Lead / Developer</h3>
+      <p class="text-sm text-gray-600">YourProject • 2025 - Present</p>
+      <p class="mt-1">Leading development of an MVP in [Your tech stack]. Visit <a href="https://yourprojecturl.com" class="text-blue-600 underline">yourprojecturl.com</a>.</p>
     </div>
 
-    <!------------------------------Section----------------------------------->
-
-    <section id="sec1">
-        <div id="intro">
-            <h1>Hello Everyone, I am Prakhar</h1>
-        </div>
-        <div id="poster"><img src="./images/prakhar.png" alt=""></div>
-    </section>
-
-    <!------------------------------Section----------------------------------->
-
-    <section id="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>My Projects</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="project">
-                        <div class="project-image">
-                            <img src="images/tempConverter.png">
-                        </div>
-                        <div class="project-text">
-                            <h3 class="project-heading">Temperature Converter</h3>
-                            <a href="projects/tempConverter.html" class="project-link" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="project">
-                        <div class="project-image">
-                            <img src="/images/IP_Calculator.png" alt="IP Calculator">
-                        </div>
-                        <div class="project-text">
-                            <h3 class="project-heading">IP Calculator</h3>
-                            <p class="project-paragraph"></p>
-                            <a href="subnet.html" class="project-link">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-4"> 
-                    <div class="project">
-                        <div class="project-image">
-                            <img src="project3.jpg" alt="Project 3">
-                        </div>
-                        <div class="project-text">
-                            <h3 class="project-heading">Project 3</h3>
-                            <p class="project-paragraph"></p>
-                            <a href="#" class="project-link">View Project</a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-
-
-
-
+    <div class="mb-6">
+      <h3 class="font-bold">Software Engineer</h3>
+      <p class="text-sm text-gray-600">YourCompany • 2023 - 2025</p>
+      <p class="mt-1">Worked on core systems, backend APIs, and deployment pipelines. Contributed to scalable features handling thousands of users.</p>
     </div>
-    </section>
 
-    <!------------------------------Footer----------------------------------->
+    <div>
+      <h3 class="font-bold">Intern / Junior Developer</h3>
+      <p class="text-sm text-gray-600">StartupX • 2022 - 2023</p>
+      <p class="mt-1">Built internal dashboards and fixed bugs across frontend/backend using React and Node.js.</p>
+    </div>
+  </section>
 
-    <footer>
-        <div class="footer">
-            <a href="#logo"><img class="icon" src="./images/home.png" alt=""></a>
-            <br>
-            <h6>&copy; 2023 Parkkrrr</h6>
-        </div>
-    </footer>
+  <section>
+    <h2 class="text-2xl font-semibold mb-4">Projects</h2>
 
+    <div class="p-4 border rounded-lg mb-4">
+      <h3 class="font-semibold">SkillBridge</h3>
+      <p class="mt-1">A platform where users can create, learn, and teach skills. It uses a skill-matching algorithm to solve the double coincidence of wants problem. Check it out at <a href="https://yourprojectlink.com" class="text-blue-600 underline">yourprojectlink.com</a></p>
+      <div class="mt-2 flex flex-wrap gap-2 text-sm">
+        <span class="bg-gray-100 px-2 py-1 rounded">MERN</span>
+        <span class="bg-gray-100 px-2 py-1 rounded">Socket.io</span>
+        <span class="bg-gray-100 px-2 py-1 rounded">Vercel</span>
+        <span class="bg-gray-100 px-2 py-1 rounded">MongoDB</span>
+      </div>
+    </div>
 
+    <div class="p-4 border rounded-lg">
+      <h3 class="font-semibold">Issue Tracker</h3>
+      <p class="mt-1">An issue-tracking system like GitHub Issues. Built with React and Node.js. Deployed on Vercel.</p>
+      <div class="mt-2 flex flex-wrap gap-2 text-sm">
+        <span class="bg-gray-100 px-2 py-1 rounded">React</span>
+        <span class="bg-gray-100 px-2 py-1 rounded">Express</span>
+        <span class="bg-gray-100 px-2 py-1 rounded">MongoDB</span>
+        <span class="bg-gray-100 px-2 py-1 rounded">Vercel</span>
+      </div>
+    </div>
+  </section>
 
 </body>
-
 </html>
