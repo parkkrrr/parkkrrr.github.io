@@ -1,115 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prakhar Verma - Backend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prakhar Verma | Backend Developer</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ["Inter", "sans-serif"] }
-        }
-      }
-    };
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-<body class="bg-white text-gray-900 font-sans p-6 max-w-2xl mx-auto">
+<body class="bg-white text-gray-900">
+  <main class="max-w-3xl mx-auto px-6 py-10"><!-- Header -->
+<header class="mb-12">
+  <h1 class="text-4xl font-bold">Prakhar Verma</h1>
+  <p class="mt-3 text-lg text-gray-700">
+    Aspiring backend developer with strong problem-solving skills and full-stack experience.
+    Passionate about scalable systems, Java, .NET, and modern backend tools.
+  </p>
 
-  <!-- Header -->
-  <header class="mb-10">
-    <h1 class="text-4xl font-bold">Prakhar Verma</h1>
-<div class="mt-6">
-  <a href="/resume.pdf" download
-     class="inline-flex items-center px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-700 transition">
-    <!-- Download icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-        d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
-    </svg>
-    Download Resume
-  </a>
-</div>
-    <p class="mt-2 text-lg">
-      Aspiring backend developer with strong problem-solving skills and full-stack experience. Actively learning Java,
-      .NET, and enterprise tools to grow into backend and enterprise-level systems.
+  <div class="mt-5 flex items-center space-x-6">
+    <!-- GitHub -->
+    <a href="https://github.com/parkkrrr" target="_blank" class="flex items-center space-x-2 text-gray-700 hover:text-black">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-6 h-6">
+      <span class="text-lg font-medium">GitHub</span>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/parkkrrr" target="_blank" class="flex items-center space-x-2 text-gray-700 hover:text-black">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-6 h-6">
+      <span class="text-lg font-medium">LinkedIn</span>
+    </a>
+
+    <!-- Resume Download -->
+    <a href="resume.pdf" download class="flex items-center space-x-2 text-sm px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+      </svg>
+      <span>Resume</span>
+    </a>
+  </div>
+</header>
+
+<!-- Projects -->
+<section class="mb-12">
+  <h2 class="text-2xl font-semibold mb-6">Projects</h2>
+
+  <div class="mb-8 border rounded-lg p-4">
+    <h3 class="text-xl font-semibold">Issue Tracker</h3>
+    <p class="text-sm mt-1 text-gray-700">
+      A fully functional issue tracking platform deployed on Vercel.
     </p>
-  <div class="mt-4 flex space-x-6 items-center">
-  <!-- GitHub -->
-  <a href="https://github.com/parkkrrr" target="_blank" class="flex items-center space-x-2 text-gray-700 hover:text-black">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-6 h-6"/>
-    <span class="text-lg font-medium">GitHub</span>
-  </a>
-
-  <!-- LinkedIn -->
-  <a href="https://linkedin.com/in/parkkrrr" target="_blank" class="flex items-center space-x-2 text-gray-700 hover:text-black">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-6 h-6"/>
-    <span class="text-lg font-medium">LinkedIn</span>
-  </a>
-</div>
-  </header>
-
-  <!-- Experience -->
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold mb-4">Experience</h2>
-    <p class="text-gray-500 italic">[To be updated soon]</p>
-  </section>
-
-  <!-- Projects -->
-  <section>
-    <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-
-    <!-- Issue Tracker -->
-    <div class="p-4 border rounded-lg mb-4">
-      <h3 class="font-semibold text-lg">Issue Tracker</h3>
-      <p class="mt-1 text-sm text-gray-700">
-        A fully functional issue tracking platform built with modern web tools and deployed on Vercel.
-      </p>
-      <ul class="list-disc list-inside text-sm mt-1 text-gray-600">
-        <li>Custom authentication and authorization using NextAuth.js</li>
-        <li>Responsive UI with Tailwind CSS and Radix UI</li>
-        <li>Prisma ORM integrated with MySQL</li>
-      </ul>
-      <div class="mt-2 flex flex-wrap gap-2 text-sm">
-        <span class="bg-gray-100 px-2 py-1 rounded">Next.js</span>
-        <span class="bg-gray-100 px-2 py-1 rounded">Tailwind CSS</span>
-        <span class="bg-gray-100 px-2 py-1 rounded">Radix UI</span>
-        <span class="bg-gray-100 px-2 py-1 rounded">NextAuth.js</span>
-        <span class="bg-gray-100 px-2 py-1 rounded">MySQL</span>
-        <span class="bg-gray-100 px-2 py-1 rounded">Prisma</span>
-        <span class="bg-gray-100 px-2 py-1 rounded">Vercel</span>
-      </div>
+    <ul class="list-disc list-inside text-sm text-gray-600 mt-2">
+      <li>Custom authentication with NextAuth.js</li>
+      <li>Modular UI using Tailwind CSS and Radix UI</li>
+      <li>Integrated MySQL with Prisma ORM</li>
+    </ul>
+    <div class="mt-3 flex flex-wrap gap-2 text-sm">
+      <span class="bg-gray-100 px-2 py-1 rounded">Next.js</span>
+      <span class="bg-gray-100 px-2 py-1 rounded">Tailwind CSS</span>
+      <span class="bg-gray-100 px-2 py-1 rounded">Prisma</span>
+      <span class="bg-gray-100 px-2 py-1 rounded">MySQL</span>
+      <span class="bg-gray-100 px-2 py-1 rounded">NextAuth.js</span>
     </div>
+  </div>
 
-    <!-- Chat Application - PingX -->
-    <div class="p-4 border rounded-lg">
-      <h3 class="font-semibold text-lg">PingX - Real-Time Chat App</h3>
-      <p class="mt-1 text-sm text-gray-700">
-        A real-time chat app supporting 1:1 chat and live updates. Built with MERN stack and deployed.
-      </p>
-      <ul class="list-disc list-inside text-sm mt-1 text-gray-600">
-        <li>Built REST APIs and WebSocket integration for real-time messaging</li>
-        <li>Designed clean responsive chat interface</li>
-        <li>Used MongoDB for fast and scalable message persistence</li>
-      </ul>
-      <div class="mt-2 flex flex-wrap gap-2 text-sm">
-        <span class="bg-gray-100 px-2 py-1 rounded">MongoDB</span>
-        <span class="bg-gray-100 px-2 py-1 rounded">Express</span>
-        <span class="bg-gray-100 px-2 py-1 rounded">React</span>
-        <span class="bg-gray-100 px-2 py-1 rounded">Node.js</span>
-        <span class="bg-gray-100 px-2 py-1 rounded">Socket.IO</span>
-        <span class="bg-gray-100 px-2 py-1 rounded">Tailwind CSS</span>
-      </div>
+  <div class="border rounded-lg p-4">
+    <h3 class="text-xl font-semibold">PingX - Real-Time Chat App</h3>
+    <p class="text-sm mt-1 text-gray-700">
+      1:1 chat interface with real-time updates using WebSocket.
+    </p>
+    <ul class="list-disc list-inside text-sm text-gray-600 mt-2">
+      <li>Built REST APIs and WebSocket integration</li>
+      <li>Designed responsive layout and clean UI</li>
+      <li>Used MongoDB for message storage</li>
+    </ul>
+    <div class="mt-3 flex flex-wrap gap-2 text-sm">
+      <span class="bg-gray-100 px-2 py-1 rounded">MongoDB</span>
+      <span class="bg-gray-100 px-2 py-1 rounded">Express</span>
+      <span class="bg-gray-100 px-2 py-1 rounded">React</span>
+      <span class="bg-gray-100 px-2 py-1 rounded">Node.js</span>
+      <span class="bg-gray-100 px-2 py-1 rounded">Socket.IO</span>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="mt-12 border-t pt-4 text-sm text-gray-500 text-center">
-    © 2025 Prakhar Verma · 
-    <a href="https://github.com/parkkrrr" class="hover:underline">GitHub</a> · 
-    <a href="https://linkedin.com/in/parkkrrr" class="hover:underline">LinkedIn</a>
-  </footer>
+<!-- Experience -->
+<section class="mb-12">
+  <h2 class="text-2xl font-semibold mb-4">Experience</h2>
+  <p class="text-gray-500 italic">Coming soon...</p>
+</section>
 
+<!-- Footer -->
+<footer class="text-center text-sm text-gray-500 border-t pt-4">
+  © 2025 Prakhar Verma · <a href="https://github.com/parkkrrr" class="hover:underline">GitHub</a> · <a href="https://linkedin.com/in/parkkrrr" class="hover:underline">LinkedIn</a>
+</footer>
+
+  </main>
 </body>
 </html>
