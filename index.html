@@ -7,28 +7,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    body {
+      transition: background 0.3s ease, color 0.3s ease;
+    }
   </style>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
   <main class="max-w-3xl mx-auto px-6 py-10"><!-- Header -->
 <header class="mb-12">
-  <h1 class="text-4xl font-bold">Prakhar Verma</h1>
-  <p class="mt-3 text-lg text-gray-700">
+  <div class="flex justify-between items-center">
+    <h1 class="text-4xl font-bold">Prakhar Verma</h1>
+    <button onclick="document.body.classList.toggle('dark')" class="px-3 py-1 rounded bg-gray-200 dark:bg-gray-800 text-sm">
+      Toggle Theme
+    </button>
+  </div>
+  <p class="mt-3 text-lg text-gray-700 dark:text-gray-300">
     Aspiring backend developer with strong problem-solving skills and full-stack experience.
     Passionate about scalable systems, Java, .NET, and modern backend tools.
   </p>
 
   <div class="mt-5 flex items-center space-x-6">
     <!-- GitHub -->
-    <a href="https://github.com/parkkrrr" target="_blank" class="flex items-center space-x-2 text-gray-700 hover:text-black">
+    <a href="https://github.com/parkkrrr" target="_blank" class="flex items-center space-x-2 hover:text-black dark:hover:text-white">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-6 h-6">
       <span class="text-lg font-medium">GitHub</span>
     </a>
 
     <!-- LinkedIn -->
-    <a href="https://linkedin.com/in/parkkrrr" target="_blank" class="flex items-center space-x-2 text-gray-700 hover:text-black">
+    <a href="https://linkedin.com/in/parkkrrr" target="_blank" class="flex items-center space-x-2 hover:text-black dark:hover:text-white">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-6 h-6">
       <span class="text-lg font-medium">LinkedIn</span>
     </a>
@@ -43,45 +61,50 @@
   </div>
 </header>
 
+<!-- Lottie Animation -->
+<div class="mb-12">
+  <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_jtbfg2nb.json" background="transparent" speed="1" style="width: 100%; max-width: 600px; margin: auto;" loop autoplay></lottie-player>
+</div>
+
 <!-- Projects -->
 <section class="mb-12">
   <h2 class="text-2xl font-semibold mb-6">Projects</h2>
 
   <div class="mb-8 border rounded-lg p-4">
     <h3 class="text-xl font-semibold">Issue Tracker</h3>
-    <p class="text-sm mt-1 text-gray-700">
+    <p class="text-sm mt-1 text-gray-700 dark:text-gray-300">
       A fully functional issue tracking platform deployed on Vercel.
     </p>
-    <ul class="list-disc list-inside text-sm text-gray-600 mt-2">
+    <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 mt-2">
       <li>Custom authentication with NextAuth.js</li>
       <li>Modular UI using Tailwind CSS and Radix UI</li>
       <li>Integrated MySQL with Prisma ORM</li>
     </ul>
     <div class="mt-3 flex flex-wrap gap-2 text-sm">
-      <span class="bg-gray-100 px-2 py-1 rounded">Next.js</span>
-      <span class="bg-gray-100 px-2 py-1 rounded">Tailwind CSS</span>
-      <span class="bg-gray-100 px-2 py-1 rounded">Prisma</span>
-      <span class="bg-gray-100 px-2 py-1 rounded">MySQL</span>
-      <span class="bg-gray-100 px-2 py-1 rounded">NextAuth.js</span>
+      <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">Next.js</span>
+      <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">Tailwind CSS</span>
+      <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">Prisma</span>
+      <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">MySQL</span>
+      <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">NextAuth.js</span>
     </div>
   </div>
 
   <div class="border rounded-lg p-4">
     <h3 class="text-xl font-semibold">PingX - Real-Time Chat App</h3>
-    <p class="text-sm mt-1 text-gray-700">
+    <p class="text-sm mt-1 text-gray-700 dark:text-gray-300">
       1:1 chat interface with real-time updates using WebSocket.
     </p>
-    <ul class="list-disc list-inside text-sm text-gray-600 mt-2">
+    <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 mt-2">
       <li>Built REST APIs and WebSocket integration</li>
       <li>Designed responsive layout and clean UI</li>
       <li>Used MongoDB for message storage</li>
     </ul>
     <div class="mt-3 flex flex-wrap gap-2 text-sm">
-      <span class="bg-gray-100 px-2 py-1 rounded">MongoDB</span>
-      <span class="bg-gray-100 px-2 py-1 rounded">Express</span>
-      <span class="bg-gray-100 px-2 py-1 rounded">React</span>
-      <span class="bg-gray-100 px-2 py-1 rounded">Node.js</span>
-      <span class="bg-gray-100 px-2 py-1 rounded">Socket.IO</span>
+      <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">MongoDB</span>
+      <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">Express</span>
+      <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">React</span>
+      <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">Node.js</span>
+      <span class="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">Socket.IO</span>
     </div>
   </div>
 </section>
